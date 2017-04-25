@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "e2e": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "protractor cucumber.conf.js",
+    "update": "webdriver-manager update",
+    "update-test": "npm run update && npm run test",
+    "elementExplorer": "protractor --elementExplorer"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "2.3.0",
+    "chai-as-promised": "5.3.0",
+    "commander": "^2.9.0",
+    "cucumber": "2.0.0-rc.9",
+    "lodash": "^4.3.0",
+    "protractor": "5.1.1",
+    "protractor-cucumber-framework": "3.1.0",
+    "shelljs": "^0.7.7",
+    "yargs": "^3.32.0"
+  }
+}
